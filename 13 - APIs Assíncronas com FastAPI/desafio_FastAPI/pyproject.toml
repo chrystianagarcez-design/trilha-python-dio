@@ -1,0 +1,20 @@
+[project]
+name = "desafio-fastapi"
+version = "0.1.0"
+description = "API Bancária Assíncrona com FastAPI"
+authors = [
+    {name = "Chrystian Akegawa Garcêz"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard] (>=0.46.0,<0.47.0)",
+    "httpx (>=0.28.1,<0.29.0)",
+    "rich (>=15.0.0,<16.0.0)",
+    "databases[aiosqlite] (>=0.9.0,<0.10.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
